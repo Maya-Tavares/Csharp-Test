@@ -1,0 +1,21 @@
+@{
+    ViewData["Title"] = "Calculadora";
+}
+
+<h1>Calculadora</h1>
+<form action="/Calculadora/Resultado" method="post">
+    <label for="n1">Número 1</label>
+    <input type="text" name="n1" id="n1">
+
+    <label for="n2">Número 2</label>
+    <input type="text" name="n2" id="n2">
+
+    <select name="operacao" id="operacao">
+        <option value="Soma">Somar</option>
+        <option value="Subtração">Subtrair</option>
+        <option value="Multiplicação">Multiplicar</option>
+        <option value="Divisão">Dividir</option>
+    </select>
+
+    <input type="submit" value="Calcular">
+</form>
